@@ -1,0 +1,6 @@
+#
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} \/index.php\ HTTP [NC]
+RewriteRule (.*)index.php$ /$1 [R=301,L]
